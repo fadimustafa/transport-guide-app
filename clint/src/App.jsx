@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import MapPage from "./pages/MapPage";
 import "leaflet/dist/leaflet.css";
+import RoutesEditor from "./pages/RoutesEditor";
 import RouteManager from "./pages/RouteManager";
 
 export default function App() {
@@ -17,7 +18,7 @@ export default function App() {
 
       <Routes>
         <Route path="/" element={<MapPage />} />
-        <Route path="/update-routes" element={<RouteManager />} />
+        <Route path="/update-routes" element={<RoutesEditor />} />
       </Routes>
     </BrowserRouter>
   );
